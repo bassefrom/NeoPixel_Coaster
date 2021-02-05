@@ -1,0 +1,475 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "NeoPixel Coaster"
+Date "2021-01-24"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Sebastian From"
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5FF98018
+P 950 2200
+F 0 "#PWR0101" H 950 1950 50  0001 C CNN
+F 1 "GND" H 955 2027 50  0000 C CNN
+F 2 "" H 950 2200 50  0001 C CNN
+F 3 "" H 950 2200 50  0001 C CNN
+	1    950  2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  1000 1    50   Input ~ 0
+3V
+$Comp
+L MyOwn:MAX619_MyOwn U2
+U 1 1 600D9710
+P 2800 1700
+F 0 "U2" H 2800 2065 50  0000 C CNN
+F 1 "MAX619_MyOwn" H 2800 1974 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2800 2100 50  0001 C CNN
+F 3 "" H 2550 1900 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 1150 1    50   Input ~ 0
+3V
+Wire Wire Line
+	1800 1150 1800 1700
+$Comp
+L Device:C C3
+U 1 1 600DBBDF
+P 2800 1200
+F 0 "C3" V 2548 1200 50  0000 C CNN
+F 1 "0.22u" V 2639 1200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2838 1050 50  0001 C CNN
+F 3 "~" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 600DC86E
+P 2800 2200
+F 0 "C4" V 2950 2200 50  0000 C CNN
+F 1 "0.22u" V 3050 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2838 2050 50  0001 C CNN
+F 3 "~" H 2800 2200 50  0001 C CNN
+	1    2800 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1600 2350 1600
+Wire Wire Line
+	2350 1600 2350 1200
+Wire Wire Line
+	2350 1200 2650 1200
+Wire Wire Line
+	2950 1200 3300 1200
+Wire Wire Line
+	3300 1200 3300 1600
+Wire Wire Line
+	3300 1600 3150 1600
+Wire Wire Line
+	2950 2200 3300 2200
+Wire Wire Line
+	3300 2200 3300 1900
+Wire Wire Line
+	3300 1900 3150 1900
+Wire Wire Line
+	2450 1900 2350 1900
+Wire Wire Line
+	2350 1900 2350 2200
+Wire Wire Line
+	2350 2200 2650 2200
+$Comp
+L power:GND #PWR0102
+U 1 1 600DEE84
+P 3500 2250
+F 0 "#PWR0102" H 3500 2000 50  0001 C CNN
+F 1 "GND" H 3505 2077 50  0000 C CNN
+F 2 "" H 3500 2250 50  0001 C CNN
+F 3 "" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2250 3500 1800
+Wire Wire Line
+	3500 1800 3150 1800
+Wire Wire Line
+	3150 1700 3500 1700
+Wire Wire Line
+	3500 1700 3500 1800
+Connection ~ 3500 1800
+$Comp
+L power:GND #PWR0103
+U 1 1 600DFC9B
+P 1800 2200
+F 0 "#PWR0103" H 1800 1950 50  0001 C CNN
+F 1 "GND" H 1805 2027 50  0000 C CNN
+F 2 "" H 1800 2200 50  0001 C CNN
+F 3 "" H 1800 2200 50  0001 C CNN
+	1    1800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 600E0361
+P 1800 2000
+F 0 "C1" H 1915 2046 50  0000 L CNN
+F 1 "10u" H 1915 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1800 2000 50  0001 C CNN
+F 3 "~" H 1800 2000 50  0001 C CNN
+	1    1800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1700 2450 1700
+$Comp
+L Device:C C2
+U 1 1 600E1EEE
+P 2150 2000
+F 0 "C2" H 2265 2046 50  0000 L CNN
+F 1 "10u" H 2265 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2150 2000 50  0001 C CNN
+F 3 "~" H 2150 2000 50  0001 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 600E227A
+P 2150 2200
+F 0 "#PWR0104" H 2150 1950 50  0001 C CNN
+F 1 "GND" H 2155 2027 50  0000 C CNN
+F 2 "" H 2150 2200 50  0001 C CNN
+F 3 "" H 2150 2200 50  0001 C CNN
+	1    2150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2200 2150 2150
+Wire Wire Line
+	1800 2200 1800 2150
+Wire Wire Line
+	1800 1850 1800 1700
+Connection ~ 1800 1700
+Wire Wire Line
+	2150 1850 2150 1800
+Wire Wire Line
+	2150 1800 2450 1800
+Text GLabel 2050 1800 0    50   Input ~ 0
+5V
+Wire Wire Line
+	2050 1800 2150 1800
+Connection ~ 2150 1800
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U1
+U 1 1 600E45F2
+P 2600 4350
+F 0 "U1" H 2071 4396 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 2071 4305 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2600 4350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2600 4350 50  0001 C CNN
+	1    2600 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 3600 1    50   Input ~ 0
+5V
+Wire Wire Line
+	2600 3750 2600 3600
+$Comp
+L power:GND #PWR0105
+U 1 1 600E5EBE
+P 2600 4950
+F 0 "#PWR0105" H 2600 4700 50  0001 C CNN
+F 1 "GND" H 2605 4777 50  0000 C CNN
+F 2 "" H 2600 4950 50  0001 C CNN
+F 3 "" H 2600 4950 50  0001 C CNN
+	1    2600 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 1650 2    50   Input ~ 0
+5V
+Text GLabel 4400 1750 0    50   Input ~ 0
+SCK
+Text GLabel 4400 1650 0    50   Input ~ 0
+MISO
+Text GLabel 5200 1750 2    50   Input ~ 0
+MOSI
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 601039E3
+P 4750 1750
+F 0 "J1" H 4800 2067 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4800 1976 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 4750 1750 50  0001 C CNN
+F 3 "~" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1650 4550 1650
+Wire Wire Line
+	4400 1750 4550 1750
+Wire Wire Line
+	4400 1850 4550 1850
+Wire Wire Line
+	5050 1650 5200 1650
+Wire Wire Line
+	5050 1750 5200 1750
+Wire Wire Line
+	5050 1850 5200 1850
+Text GLabel 4400 1850 0    50   Input ~ 0
+RESET
+Text GLabel 3500 4550 2    50   Input ~ 0
+RESET
+Text GLabel 3500 4250 2    50   Input ~ 0
+SCK
+Text GLabel 3500 4150 2    50   Input ~ 0
+MISO
+Text GLabel 3500 4050 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	3200 4050 3400 4050
+Wire Wire Line
+	3200 4150 3500 4150
+Wire Wire Line
+	3200 4250 3500 4250
+Wire Wire Line
+	3200 4550 3500 4550
+$Comp
+L power:GND #PWR0106
+U 1 1 6010AC50
+P 5200 1850
+F 0 "#PWR0106" H 5200 1600 50  0001 C CNN
+F 1 "GND" H 5205 1677 50  0000 C CNN
+F 2 "" H 5200 1850 50  0001 C CNN
+F 3 "" H 5200 1850 50  0001 C CNN
+	1    5200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4350 3200 4350
+Text GLabel 3500 4350 2    50   Input ~ 0
+SensOut
+Wire Wire Line
+	3500 3850 3400 3850
+Wire Wire Line
+	3400 3850 3400 4050
+Connection ~ 3400 4050
+Wire Wire Line
+	3400 4050 3500 4050
+$Comp
+L Device:R R1
+U 1 1 6011D530
+P 6000 4250
+F 0 "R1" H 6070 4296 50  0000 L CNN
+F 1 "100k" H 6070 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5930 4250 50  0001 C CNN
+F 3 "~" H 6000 4250 50  0001 C CNN
+	1    6000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 6011E6CC
+P 6000 4750
+F 0 "TH1" H 6098 4796 50  0000 L CNN
+F 1 "Thermistor_NTC" H 6098 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 6000 4800 50  0001 C CNN
+F 3 "~" H 6000 4800 50  0001 C CNN
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6011FC11
+P 6000 4900
+F 0 "#PWR0107" H 6000 4650 50  0001 C CNN
+F 1 "GND" H 6005 4727 50  0000 C CNN
+F 2 "" H 6000 4900 50  0001 C CNN
+F 3 "" H 6000 4900 50  0001 C CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 3950 1    50   Input ~ 0
+5V
+Wire Wire Line
+	6000 4100 6000 3950
+Wire Wire Line
+	6000 4600 6000 4500
+Text GLabel 5850 4500 0    50   Input ~ 0
+SensOut
+Wire Wire Line
+	5850 4500 6000 4500
+Connection ~ 6000 4500
+Wire Wire Line
+	6000 4500 6000 4400
+Wire Wire Line
+	6100 1800 6200 1800
+Text GLabel 6100 1800 0    50   Input ~ 0
+PixelData
+Text GLabel 3500 3850 2    50   Input ~ 0
+PixelData
+NoConn ~ 9700 1800
+Wire Wire Line
+	8750 1800 9100 1800
+Wire Wire Line
+	7750 1800 8150 1800
+Wire Wire Line
+	6800 1800 7150 1800
+Connection ~ 6500 2100
+Connection ~ 7450 2100
+Wire Wire Line
+	7450 2100 6500 2100
+Connection ~ 8450 2100
+Wire Wire Line
+	7450 2100 8450 2100
+Wire Wire Line
+	9400 2100 8450 2100
+Connection ~ 8450 1500
+Wire Wire Line
+	9400 1500 8450 1500
+Connection ~ 7450 1500
+Wire Wire Line
+	7450 1500 8450 1500
+Connection ~ 6500 1500
+Wire Wire Line
+	6500 1500 7450 1500
+$Comp
+L LED:WS2812B D4
+U 1 1 6011264A
+P 9400 1800
+F 0 "D4" H 9744 1846 50  0000 L CNN
+F 1 "WS2812B" H 9744 1755 50  0000 L CNN
+F 2 "MyOwn:WS2812_2020_SMD" H 9450 1500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9500 1425 50  0001 L TNN
+	1    9400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 60111CFC
+P 8450 1800
+F 0 "D3" H 8794 1846 50  0000 L CNN
+F 1 "WS2812B" H 8794 1755 50  0000 L CNN
+F 2 "MyOwn:WS2812_2020_SMD" H 8500 1500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8550 1425 50  0001 L TNN
+	1    8450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D2
+U 1 1 6011115E
+P 7450 1800
+F 0 "D2" H 7794 1846 50  0000 L CNN
+F 1 "WS2812B" H 7794 1755 50  0000 L CNN
+F 2 "MyOwn:WS2812_2020_SMD" H 7500 1500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7550 1425 50  0001 L TNN
+	1    7450 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2150 6500 2100
+Wire Wire Line
+	6500 1500 6500 1450
+Text GLabel 6500 1450 1    50   Input ~ 0
+5V
+$Comp
+L power:GND #PWR0108
+U 1 1 5FFA9C39
+P 6500 2150
+F 0 "#PWR0108" H 6500 1900 50  0001 C CNN
+F 1 "GND" H 6505 1977 50  0000 C CNN
+F 2 "" H 6500 2150 50  0001 C CNN
+F 3 "" H 6500 2150 50  0001 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D1
+U 1 1 5FFA8B06
+P 6500 1800
+F 0 "D1" H 6844 1846 50  0000 L CNN
+F 1 "WS2812B" H 6844 1755 50  0000 L CNN
+F 2 "MyOwn:WS2812_2020_SMD" H 6550 1500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6600 1425 50  0001 L TNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 900  1200
+$Comp
+L MyOwn:Battery_Cell_Holder_SMD BT2
+U 1 1 60159657
+P 1150 2000
+F 0 "BT2" H 1268 2096 50  0000 L CNN
+F 1 "Battery_Cell_Holder_SMD" H 1268 2005 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3002_1x2032" V 1150 2060 50  0001 C CNN
+F 3 "~" V 1150 2060 50  0001 C CNN
+	1    1150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyOwn:Battery_Cell_Holder_SMD BT1
+U 1 1 6015AA75
+P 800 2000
+F 0 "BT1" H 918 2096 50  0000 L CNN
+F 1 "Battery_Cell_Holder_SMD" H 918 2005 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3002_1x2032" V 800 2060 50  0001 C CNN
+F 3 "~" V 800 2060 50  0001 C CNN
+	1    800  2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  2100 800  2150
+Wire Wire Line
+	800  2150 950  2150
+Wire Wire Line
+	950  2150 950  2200
+Wire Wire Line
+	950  2150 1150 2150
+Wire Wire Line
+	1150 2150 1150 2100
+Connection ~ 950  2150
+Wire Wire Line
+	800  1800 800  1750
+Wire Wire Line
+	800  1750 1000 1750
+Wire Wire Line
+	1000 1750 1000 1600
+Wire Wire Line
+	1000 1750 1150 1750
+Wire Wire Line
+	1150 1750 1150 1800
+Connection ~ 1000 1750
+$Comp
+L dk_Slide-Switches:EG1218 S1
+U 1 1 60163109
+P 1000 1400
+F 0 "S1" V 1046 1212 50  0000 R CNN
+F 1 "EG1218" V 955 1212 50  0000 R CNN
+F 2 "MyOwn:Skjutomkopplare 1-pol on-on pcb vinklad" H 1200 1600 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1200 1700 60  0001 L CNN
+F 4 "EG1903-ND" H 1200 1800 60  0001 L CNN "Digi-Key_PN"
+F 5 "EG1218" H 1200 1900 60  0001 L CNN "MPN"
+F 6 "Switches" H 1200 2000 60  0001 L CNN "Category"
+F 7 "Slide Switches" H 1200 2100 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1200 2200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 1200 2300 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH SLIDE SPDT 200MA 30V" H 1200 2400 60  0001 L CNN "Description"
+F 11 "E-Switch" H 1200 2500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1200 2600 60  0001 L CNN "Status"
+	1    1000 1400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1100 1200
+NoConn ~ 3200 4450
+$EndSCHEMATC

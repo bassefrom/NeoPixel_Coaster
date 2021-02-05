@@ -1,0 +1,11 @@
+Id;Designator;Package;Quantity;Designation;Supplier and ref
+1;C2,C1;C_1206_3216Metric;2;10u;https://www.electrokit.com/produkt/skjutomkopplare-1-pol-on-on-pcb-vinklad/
+2;S1;Skjutomkopplare 1-pol on-on pcb vinklad;1;EG1218;https://www.electrokit.com/produkt/skjutomkopplare-1-pol-on-on-pcb-vinklad/
+3;U1;SOIJ-8_5.3x5.3mm_P1.27mm;1;ATtiny85-20SU;https://www.electrokit.com/produkt/attiny85-20su-so-8-8-bit-mcu-flash-8k/
+4;BT1,BT2;BatteryHolder_Keystone_3002_1x2032;2;Battery_Cell_Holder_SMD;https://www.electrokit.com/produkt/batterihallare-cr2020-2025-2032-smd/
+5;C3,C4;C_1206_3216Metric;2;0.22u;https://www.electrokit.com/produkt/kondensator-1206-x7r-220nf-%c2%b110/
+6;D1,D2,D3,D4;WS2812_2020_SMD;4;WS2812B;https://www.electrokit.com/produkt/led-smd2020-rgb-adresserbar-ws2812b-10-pack/
+7;J1;PinHeader_2x03_P1.27mm_Vertical_SMD;1;Conn_02x03_Odd_Even;https://www.electrokit.com/produkt-kategori/kontaktdon-2/stiftlist-hylslist/1-27mm/ or https://www.electrokit.com/produkt/hylslist-1-27mm-2x5p-smd/
+8;R1;R_1206_3216Metric;1;100k;https://www.electrokit.com/produkt/motstand-100kohm-0-25w-smd-1206/
+9;TH1;R_1206_3216Metric;1;Thermistor_NTC;https://www.electrokit.com/produkt/ntc-100kohm-smd-1206/
+10;U2;SO-8_3.9x4.9mm_P1.27mm;1;MAX619_MyOwn;https://www.electrokit.com/produkt/max619csa-so-8-5v-step-up-regulator/
