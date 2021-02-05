@@ -75,7 +75,7 @@ void loop() {
     r = 25;
   }
 
-  //Limit to 50
+  //Limit to 25
   if(b > 25)
   {
     b = 25;
