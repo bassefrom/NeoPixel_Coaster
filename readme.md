@@ -40,3 +40,11 @@
 # avrdude -P COM1 -b 19200 -c avrisp -p t85 -u -U efuse:w:0xFF:m -U lfuse:w:0xE2:m -U hfuse:w:0xD9:m -U flash:w:"{HEX-file directory here}\file.hex":i
 #
 # Example: avrdude -P COM1 -b 19200 -c avrisp -p t85 -u -U efuse:w:0xFF:m -U lfuse:w:0xE2:m -U hfuse:w:0xD9:m -U flash:w:"C:\Users\Basse\Documents\KiCad\NeoPixel_Coaster\Software\ATTiny85_NeoPixel\ATTiny85_NeoPixel.ino.hex":i
+#
+#
+# TO DO HARDWARE:
+#
+# Center all components
+# Move switch to USB port
+# Make room for 8 rubber feet
+# Add 4 more LEDs
