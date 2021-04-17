@@ -326,7 +326,6 @@ Text GLabel 3250 5300 2    50   Input ~ 0
 SensOut
 Wire Wire Line
 	3250 5300 3050 5300
-NoConn ~ 3050 5400
 Text GLabel 3250 4750 2    50   Input ~ 0
 PixelData
 Wire Wire Line
@@ -533,4 +532,21 @@ F 4 "C114586" H 9950 2300 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10250 2300
+$Comp
+L Switch:SW_Push SW2
+U 1 1 607B1A5A
+P 3850 5400
+F 0 "SW2" H 3850 5685 50  0000 C CNN
+F 1 "SW_Push" H 3850 5594 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 3850 5600 50  0001 C CNN
+F 3 "~" H 3850 5600 50  0001 C CNN
+	1    3850 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5400 3650 5400
+Text GLabel 4200 5400 2    50   Input ~ 0
+Vcc
+Wire Wire Line
+	4050 5400 4200 5400
 $EndSCHEMATC
